@@ -53,7 +53,7 @@ public class ListaLinearSimples {
         Scanner input = new Scanner(System.in);
         System.out.println("Digite o valor a ser excluido:");
         int valor = input.nextInt();
-        for (int i = buscaexcluir(valor); i < Global.nElem - 1; i++) {
+        for (int i = buscaexcluir(valor); i <= Global.nElem - 1; i++) {
             Global.LL[i] = Global.LL[i+1];
         }
     }
